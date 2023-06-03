@@ -35,7 +35,6 @@ promotionRouter.route('/:promotionId')
     res.end(`POST operation not supported on /promotions/${req.params.promotionId}`);
 })
 .put((req, res) => {
-    res.write(`Updating the promotion: ${req.params.promotionId}\n`);
     res.end(`Will update the promotion: ${req.body.name} with description: ${req.body.description}`);
 })
 .delete((req, res) => {

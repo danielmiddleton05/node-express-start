@@ -35,7 +35,6 @@ campsiteRouter.route('/:campsiteId')
     res.end(`POST operation not supported on /campsites/${req.params.campsiteId}`);
 })
 .put((req, res) => {
-    res.write(`Updating the campsite: ${req.params.campsiteId}\n`);
     res.end(`Will update the campsite: ${req.body.name} with description: ${req.body.description}`);
 })
 .delete((req, res) => {
